@@ -4,9 +4,7 @@ function highlight() {
 	strongs.forEach(strong => {
 		strong.style.color = ("green");
 	});
-
 }
-
 
 function return_normal() {
     //Write your code here
@@ -14,5 +12,4 @@ function return_normal() {
 	strongs.forEach(strong => {
 		strong.style.color = ("black");
 	});
-    
 }
