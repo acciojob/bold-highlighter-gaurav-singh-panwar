@@ -1,12 +1,17 @@
 function highlight() {
-    //Write your code here
-
-
+  const boldWords = document.querySelectorAll('strong');
+  boldWords.forEach((word) => {
+    word.style.color = 'green';
+  });
 }
-
 
 function return_normal() {
-    //Write your code here
-
-    
+  const boldWords = document.querySelectorAll('strong');
+  boldWords.forEach((word) => {
+    word.style.color = 'black';
+  });
 }
+
+const highlightLink = document.getElementById('highlightLink');
+highlightLink.addEventListener('mouseover', highlight);
+highlightLink.addEventListener('mouseout', return_normal);
